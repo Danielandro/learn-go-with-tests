@@ -8,7 +8,12 @@ const englishHelloPrefix = "Hello, "
 
 // returns a string
 func Hello(name string) string {
-	return englishHelloPrefix + name
+	if name == null {
+		return englishHelloPrefix + name
+	} else {
+		return englishHelloPrefix + "World"
+	}
+
 }
 
 func main() {

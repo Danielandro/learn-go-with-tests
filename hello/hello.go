@@ -5,10 +5,10 @@ package main
 import "fmt"
 
 // returns a string
-func Hello() string {
-	return "Hello Wild World!"
+func Hello(name string) string {
+	return "Hello, " + name
 }
 
 func main() {
-	fmt.Println(Hello())
+	fmt.Println(Hello("anything"))
 }

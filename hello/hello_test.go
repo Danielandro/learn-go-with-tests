@@ -10,8 +10,8 @@ func TestHello(t *testing.T) {
 	fmt.Println("TEST NAME:", t.Name())
 
 	// declaring variables
-	got := Hello()
-	want := "Hello Wild World!"
+	got := Hello("Ade")
+	want := "Hello, Ade"
 
 	if got != want {
 		// Errorf "method" prints formatted message and fails test

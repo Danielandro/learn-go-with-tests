@@ -6,7 +6,7 @@ A bunch of learnings following along with the book [Learn Go With Tests](https:/
 
 - Learn the basics of a new language (data types, syntax etc) and how to TDD in Go.
 
-- Build something basic (Airport challenge or HTTO server)
+- Build something basic (Airport challenge or HTTP server)
 
 ## Topics
 

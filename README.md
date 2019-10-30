@@ -12,7 +12,7 @@ A bunch of learnings following along with the book [Learn Go With Tests](https:/
 
 - [x] **Install Go** - Set up environment for productivity.
 
-- [ ] **Hello, world** - Declaring variables, constants, if/else statements, switch, write your first go program and write your first test. Sub-test syntax and closures.
+- [x] **Hello, world** - Declaring variables, constants, if/else statements, switch, write your first go program and write your first test. Sub-test syntax and closures.
 
 - [ ] **Integers** - Further Explore function declaration syntax and learn new ways to improve the documentation of your code.
 

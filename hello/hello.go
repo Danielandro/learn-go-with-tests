@@ -9,6 +9,7 @@ const portugueseHelloPrefix = "Olá, "
 const frenchHelloPrefix = "Bonjour, "
 const spanishHelloPrefix = "Hola, "
 
+// PUBLIC FUNCTION (first-letter uppercase)
 // returns a string
 func Hello(name string, language string) string {
 	if name == "" {
@@ -18,7 +19,8 @@ func Hello(name string, language string) string {
 	return greetingPrefix(language) + name
 }
 
-// prefix is a named return value
+// PRIVATE FUNCTION (first-letter lowercase)
+// prefix is a named return value (assigned the value "" aka zero value)
 func greetingPrefix(language string) (prefix string) {
 	switch language {
 	case "Portuguese":
@@ -30,7 +32,8 @@ func greetingPrefix(language string) (prefix string) {
 	default:
 		prefix = englishHelloPrefix
 	}
-	return prefix
+	// returns prefix implicitely
+	return
 }
 
 func main() {

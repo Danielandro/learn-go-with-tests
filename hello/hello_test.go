@@ -14,16 +14,22 @@ func TestHello(t *testing.T) {
 	}
 	// this is a Subtest
 	t.Run("saying hello to people", func(t *testing.T) {
-		// declaring variables
-		got := Hello("Ade")
+		got := Hello("Ade", "")
 		want := "Hello, Ade"
 
 		assertCorrectMessage(t, got, want)
 	})
 
 	t.Run("say 'Hello, World' when empty string supplied", func(t *testing.T) {
-		got := Hello("")
+		got := Hello("", "")
 		want := "Hello, World"
+
+		assertCorrectMessage(t, got, want)
+	})
+
+	t.Run("in Portuguese", func(t *testing.T) {
+		got := Hello("Andreas", "Portuguese")
+		want := "Olá, Andreas"
 
 		assertCorrectMessage(t, got, want)
 	})
